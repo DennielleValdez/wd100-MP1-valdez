@@ -1,0 +1,102 @@
+/* NAVIGATION */
+
+.nav-item{
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    background-color: rgba(182, 182, 174, 0.158);
+}
+
+.navbar-nav:hover{
+    /* color: rgb(255 193 7);c */
+}
+
+/* ALBUMS MODAL CARDS */
+
+.album-container{
+    margin:auto;
+    display: flex;
+    padding: 10px;
+    width: 1500px;
+    
+ }
+
+ .albumcard{
+    width:250px;
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ .albumcard-title{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+ }
+
+ .albumcard-text{
+    font-size: 20px;
+    font-weight: normal;
+ }
+ .albumcard img{
+    width: 250px;
+    height:280px;
+    padding: 15px;
+    /* background-color: #E1E5E1; */
+    border-radius: 10px;
+}
+
+.albumcard .btn{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.albumcard .btn:hover {
+    background-color: #fff;
+    color:black;
+}
+
+.albumcard:hover{
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.albumcard:hover .intro{
+    height: 100px;
+    bottom:100px;
+    background: #000000b7;
+    color:white;
+}
+
+
+/* SEMI FOOTER */
+
+.footer-container{
+    width: 1800px;
+    margin:auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-footer-container{
+    width: 1800px;
+    margin:auto;
+    justify-content: center;
+}
+
+.footer-container h3{
+    font-size: 30px;
+}
+
+.footer-container p{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+

@@ -1,0 +1,1421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+<!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+
+        <!-- LOGO -->
+            <a class="navbar-brand" href="#">
+                <img src="img/LOGO.png" alt="Logo" height="30" class="d-inline-block align-top">
+            </a>
+    
+        <!-- Toggler/collapsing button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Product Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#homenews">News & Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- CART, LOCATION, Log in -->
+            <div class="navbar-nav ms-auto d-flex align-items-center">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i></a>
+                <a class="nav-link" href="#"><i class=""></i>Log In / Sign</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="homepage" id="home"></div>
+
+    <!-- BANNER CAROUSEL -->
+    <!-- <div class="container-fluid - ito tinanggal ko kaya nag fit siya"> -->
+    <div class="carousel slide" id="bannercarousel" data-bs-ride="carousel">
+
+        <!-- CAROUSEL INNER -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Finalbanner1.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-flex flex-column h-100 align-items-end justify-content-center">
+                    <h1 class="fs-1 fw-bolder" style="font-family: 'Franklin Gothic' ">Official Lightsticks</h1>
+                    <h1 class="fs-2 fw-bolder" style="font-family: 'Franklin Gothic' ">Latest Versions Available</h1>
+                    <button class="btn btn-warning btn-lg text-dark fw-bolder mt-5">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/Finalbanner2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-flex flex-column h-100 align-items-end justify-content-center">
+                    <h1 class="fs-1 fw-bolder" style="font-family: 'Franklin Gothic' ">Magazines Coming Soon</h1>
+                    <h1 class="fs-2 fw-bolder" style="font-family: 'Franklin Gothic' ">Check Your Artist</h1>
+                    <button class="btn btn-warning btn-lg text-dark fw-bolder mt-5">Pre-order Now</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/Finalbanner3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-flex flex-column h-100 align-items-start justify-content-center">
+                    <h1 class="fs-1 fw-bolder" style="font-family: 'Franklin Gothic' ">Lates Albums</h1>
+                    <h1 class="fs-2 fw-bolder" style="font-family: 'Franklin Gothic' ">Now Available</h1>
+                    <button class="btn btn-warning btn-lg text-dark fw-bolder mt-5">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    <!-- END CAROUSEL INNER -->
+
+    <!-- CAROUSEL INDICATORS -->
+        <div class="carousel-indicators">
+            <button type="button" class="active" data-bs-target="#bannercarousel" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="2"></button>
+        </div>
+    <!-- CAROUSEL INDICATORS -->
+
+    <!-- CAROUSEL BUTTONS PREV-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannercarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+    <!-- CAROUSEL BUTTONS NEXT-->
+        <button class="carousel-control-next" type="button" data-bs-target="#bannercarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+<!-- END OF CAROUSEL -->
+
+
+
+
+<!-- CATEGORIES GRID -->
+
+    <div class="containertext mt-5 justify-content-center" id="categories">
+        <div class="row g-5">
+            <div class="col-md-12">
+                <div class="text mt-5 mb-5">
+                    <h1 class="text-center">CATEGORIES</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- CARD GRIDS -->
+
+    <div class="container mt-5 align-items-center flex-wrap justify-content-evenly">
+        <div class="row g-5">
+        <!-- ALBUMS -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Albums/Enhypen.jpg" class="card-img-top img-fluid" alt="">
+                        <h3 class="card-title mt-2">
+                            ALBUMS
+                        </h3>
+                    <br>
+                    <a href="#homealbum" target="_blank">
+                        <button class="btn btn-warning text-dark mb-3">SHOP NOW</button>
+                    </a>
+                </div>
+            </div>
+
+        <!-- LIGHTSTICKS -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Lightsticks/LST-BTS.jpg" class="card-img-top img-fluid" alt="">
+                        <h3 class="card-title mt-2">
+                            LIGHTSTICKS
+                        </h3>
+                    <br>
+                    <a href="#homelightstick" target="_blank">
+                        <button class="btn btn-warning text-dark mb-3">SHOP NOW</button>
+                    </a>
+                </div>
+            </div>
+
+        <!-- PHOTOCARDS -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Photocards/BTS5.jpg" class="card-img-top img-fluid" alt="">
+                        <h3 class="card-title mt-2">
+                            PHOTOCARDS
+                        </h3>
+                    <br>
+                    <a href="#homephoto" target="_blank">
+                        <button class="btn btn-warning text-dark mb-3">SHOP NOW</button>
+                    </a>
+                </div>
+            </div>
+
+        <!-- ACCESSORIES -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Magazines/7.jpg" class="card-img-top img-fluid" alt="">
+                        <h3 class="card-title mt-2">
+                            MAGAZINES
+                        </h3>
+                    <br>
+                    <a href="#homemagazine" target="_blank">
+                        <button class="btn btn-warning text-dark mb-3">SHOP NOW</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+<!-- ALBUMS GRID -->
+
+    <div class="containertext mt-5 justify-content-center" id="homealbum">
+        <div class="row g-5">
+            <div class="col-md-12">
+                <div class="text mt-5 mb-5">
+                    <h1 class="text-center">ALBUMS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ALBUMS MODAL-->
+
+        <div class="container mt-5 align-items-center flex-wrap justify-content-evenly">
+            <div class="row g-5">
+
+                <!-- AESPA -->
+                <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/Albums/aespa.jpeg" class="card-img" alt="">
+                            <h3 class="card-title">
+                                AESPA "SAVAGE"
+                            </h3>
+                            <p class="card-text">
+                                $30
+                            </p>
+                        <button class="btn btn-warning text-dark">ADD TO CART</button>
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#aespaModal">
+                            VIEW DETAILS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="aespaModal">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                AESPA "SAVAGE"
+                            </div>
+                            <img src="img/Albums/aespa.jpeg" class="d-block w-100" alt="">
+                            <div class="modal-body">
+                                <p>"Savage" is Aespa's third mini-album showcasing their unique AI concept with a blend of futuristic sounds and captivating performances.</p>
+                                    <h2>$30</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ATEEZ -->
+                <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/Albums/Ateez.jpg" class="card-img" alt="">
+                            <h3 class="card-title">
+                                "Zero: Fever Part.3"
+                            </h3>
+                            <p class="card-text">
+                                $30
+                            </p>
+                        <button class="btn btn-warning text-dark">ADD TO CART</button>
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ateezModal">
+                            VIEW DETAILS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="ateezModal">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                "Zero: Fever Part.3"
+                            </div>
+                            <img src="img/Albums/Ateez.jpg" class="d-block w-100" alt="">
+                            <div class="modal-body">
+                                <p>"Zero: Fever Part.3" completes Ateez's "Fever" trilogy with energetic tracks and captivating performances, solidifying their global presence.</p>
+                                    <h2>$30</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLACKPINK -->
+                <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/Albums/Blackpink.jpg" class="card-img" alt="">
+                            <h3 class="card-title">
+                                "The Album"
+                            </h3>
+                            <p class="card-text">
+                                $30
+                            </p>
+                        <button class="btn btn-warning text-dark">ADD TO CART</button>
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#BPModal">
+                            VIEW DETAILS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="BPModal">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                "The Album"
+                            </div>
+                            <img src="img/Albums/Blackpink.jpg" class="d-block w-100" alt="">
+                            <div class="modal-body">
+                                <p>"The Album" is Blackpink's highly anticipated debut studio album featuring hit tracks like "How You Like That" and "Lovesick Girls."</p>
+                                    <h2>$30</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BTS -->
+                <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/Albums/BTS.jpg" class="card-img img-fluid" alt="">
+                            <h3 class="card-title">
+                                "BE"
+                            </h3>
+                            <p class="card-text">
+                                $30
+                            </p>
+                        <button class="btn btn-warning text-dark">ADD TO CART</button>
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#BTSModal">
+                            VIEW DETAILS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="BTSModal">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                "The Album"
+                            </div>
+                            <img src="img/Albums/BTS.jpg" class="d-block w-100" alt="">
+                            <div class="modal-body">
+                                <p>"BE" is BTS's introspective album reflecting on the emotions and experiences of 2020. It includes hit tracks like "Dynamite" and "Life Goes On."</p>
+                                    <h2>$30</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- ENHYPEN -->
+                <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/Albums/Enhypen.jpg" class="card-img" alt="">
+                            <h3 class="card-title">
+                                "Dimension: Dilemma"
+                            </h3>
+                            <p class="card-text">
+                                $30
+                            </p>
+                        <button class="btn btn-warning text-dark">ADD TO CART</button>
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#EnhypenModal">
+                            VIEW DETAILS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="EnhypenModal">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                "The Album"
+                            </div>
+                            <img src="img/Albums/Enhypen.jpg" class="d-block w-100" alt="">
+                            <div class="modal-body">
+                                <p>"Dimension: Dilemma" is Enhypen's second mini-album, exploring themes of growth and self-discovery with a mix of energetic and introspective tracks.</p>
+                                    <h2>$30</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXO -->
+                <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/Albums/EXO.jpeg" class="card-img" alt="">
+                            <h3 class="card-title">
+                                "Don't Fight The Feeling"
+                            </h3>
+                            <p class="card-text">
+                                $30
+                            </p>
+                        <button class="btn btn-warning text-dark">ADD TO CART</button>
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#EXOModal">
+                            VIEW DETAILS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="EXOModal">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                "Don't Fight The Feeling"
+                            </div>
+                            <img src="img/Albums/EXO.jpeg" class="d-block w-100" alt="">
+                            <div class="modal-body">
+                                <p>"Don't Fight The Feeling" is EXO's special album celebrating their 9th anniversary, featuring a mix of new songs and fan favorites."</p>
+                                    <h2>$30</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FROMIS 9 -->
+                <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/Albums/fromis9.jpg" class="card-img" alt="">
+                            <h3 class="card-title">
+                                "My Little Society"
+                            </h3>
+                            <p class="card-text">
+                                $30
+                            </p>
+                        <button class="btn btn-warning text-dark">ADD TO CART</button>
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#f9Modal">
+                            VIEW DETAILS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="f9Modal">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                "My Little Society"
+                            </div>
+                            <img src="img/Albums/fromis9.jpg" class="d-block w-100" alt="">
+                            <div class="modal-body">
+                                <p>"My Little Society" is Fromis_9's third studio album with a mix of bright and introspective tracks, showcasing the group's growth and charm."</p>
+                                    <h2>$30</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEVENTEEN -->
+                <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/Albums/SVT.jpg" class="card-img" alt="">
+                            <h3 class="card-title">
+                                "Your Choice"
+                            </h3>
+                            <p class="card-text">
+                                $30
+                            </p>
+                        <button class="btn btn-warning text-dark">ADD TO CART</button>
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#SVTModal">
+                            VIEW DETAILS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="SVTModal">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                "Your Choice"
+                            </div>
+                            <img src="img/Albums/SVT.jpg" class="d-block w-100" alt="">
+                            <div class="modal-body">
+                                <p>"Your Choice" is Seventeen's eighth mini-album featuring a range of genres from pop to R&B, showcasing the group's musical maturity."</p>
+                                    <h2>$30</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="view-more-btn d-flex flex-column align-items-center justify-content-center">
+                    <a href="albums.html" target="_blank">
+                    <buttom class="btn btn-secondary mt-5">SEE ALL</buttom>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><hr>
+
+<!-- LIGHTSTICK GRID -->
+
+    <div class="containertext mt-5 justify-content-center" id="homelightstick">
+        <div class="row g-5">
+            <div class="col-md-12">
+                <div class="text mt-5 mb-5">
+                    <h1 class="text-center">ALBUMS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 align-items-center flex-wrap justify-content-evenly">
+        <div class="row g-5">
+
+        <!-- BLACKPINK -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Lightsticks/LST-Blackpink.png" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Bl-ping-bong
+                        </h3>
+                        <p class="card-text">
+                            $60
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#lsbpModal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lsbpModal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            Bl-ping-bong
+                        </div>
+                        <img src="img/Lightsticks/LST-Blackpink.png" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <p>Blackpink's lightstick is a sleek, black hammer-shaped design with a pink heart at the top.</p>
+                                <h2>$60</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- ENHYPEN -->
+             <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Lightsticks/LST-Enha.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            ENGENE Bong
+                        </h3>
+                        <p class="card-text">
+                            $60
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#lsenhapModal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lsenhapModal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            ENGENE Bong
+                        </div>
+                        <img src="img/Lightsticks/LST-Enha.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <p>Enhypen's lightstick features a crescent moon and star motif, reflecting their celestial theme./p>
+                                <h2>$60</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- BTS -->
+             <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Lightsticks/LST-BTS.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Army Bomb
+                        </h3>
+                        <p class="card-text">
+                            $60
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#lsbtsModal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lsbtsModal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            Army Bomb
+                        </div>
+                        <img src="img/Lightsticks/LST-BTS.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <p>The BTS ARMY Bomb is iconic with a globe-like shape and a glowing BTS logo. It's Bluetooth-enabled for interactive light shows.</p>
+                                <h2>$60</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- RED VELVET -->
+             <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Lightsticks/LST-RedVelvet.jpeg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Kim Mam Bong
+                        </h3>
+                        <p class="card-text">
+                            $60
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#lsrvModal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lsrvModal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            Kim Mam Bong
+                        </div>
+                        <img src="img/Lightsticks/LST-RedVelvet.jpeg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <p>Red Velvet's lightstick is a minimalist yet elegant design with a red velvet ribbon wrapped around a transparent globe.</p>
+                                <h2>$60</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- SHINEE -->
+             <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Lightsticks/LST-Shinee.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Shating Star
+                        </h3>
+                        <p class="card-text">
+                            $60
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#lsshineeModal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lsshineeModal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            Shating Star
+                        </div>
+                        <img src="img/Lightsticks/LST-Shinee.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <p>SHINee's lightstick (version 2) is elegant with a pearl aqua color and diamond-shaped top.</p>
+                                <h2>$60</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- TXT -->
+            <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Lightsticks/LST-TXT.png" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Moa bong
+                        </h3>
+                        <p class="card-text">
+                            $60
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#lstxtModal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lstxtModal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            Moa bong
+                        </div>
+                        <img src="img/Lightsticks/LST-Shinee.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <p>TXT's lightstick has a futuristic design with a transparent globe and glowing LED accents.</p>
+                                <h2>$60</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- NCT -->
+            <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Lightsticks/LST-NCT.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Meumwonbong
+                        </h3>
+                        <p class="card-text">
+                            $60
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#lsnctModal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lsnctModal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            Meumwonbong
+                        </div>
+                        <img src="img/Lightsticks/LST-NCT.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <p>NCT's lightstick (version 2) is sleek with an illuminated logo and square-shaped handle.</p>
+                                <h2>$60</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- SEVENTEEN -->
+            <div class="col-md-3">
+                    <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Lightsticks/LST-SVT.png" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Carat Bong
+                        </h3>
+                        <p class="card-text">
+                            $60
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#lssvtModal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lssvtModal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            Carat Bong
+                        </div>
+                        <img src="img/Lightsticks/LST-SVT.png" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <p>Seventeen's Carat Bong is elegant with a diamond shape and rose quartz and serenity colors.</p>
+                                <h2>$60</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="view-more-btn d-flex flex-column align-items-center justify-content-center">
+                    <a href="lightsticks.html" target="_blank">
+                    <buttom class="btn btn-secondary mt-5">SEE ALL</buttom>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><hr>
+
+<!-- PHOTOCARDS GRID -->
+
+    <div class="containertext mt-5 justify-content-center" id="homephoto">
+        <div class="row g-5">
+            <div class="col-md-12">
+                <div class="text mt-5 mb-5">
+                    <h1 class="text-center">PHOTOCARDS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 align-items-center flex-wrap justify-content-evenly">
+        <div class="row g-5">
+
+        <!-- ATEEZ -->
+        <div class="col-md-3">
+            <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Photocards/Ateez2.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            ATEEZ
+                        </h3>
+                        <p class="card-text">
+                            $10
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                </div>
+            </div>
+        
+        <!-- BTS -->
+        <div class="col-md-3">
+            <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Photocards/BTS2.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            BTS
+                        </h3>
+                        <p class="card-text">
+                            $10
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                </div>
+            </div>
+
+        <!-- ENHYPEN -->
+        <div class="col-md-3">
+            <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Photocards/Enhypen3.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            ENHYPEN
+                        </h3>
+                        <p class="card-text">
+                            $10
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                </div>
+            </div>
+
+        <!-- EXO -->
+        <div class="col-md-3">
+            <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Photocards/Exo4.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            EXO
+                        </h3>
+                        <p class="card-text">
+                            $10
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                </div>
+            </div>
+    
+        <!-- MONSTAX -->
+        <div class="col-md-3">
+            <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Photocards/MonstaX3.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            MONSTAX
+                        </h3>
+                        <p class="card-text">
+                            $10
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                </div>
+            </div>
+            
+        <!-- NCT -->
+        <div class="col-md-3">
+            <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Photocards/NCT1.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            NCT
+                        </h3>
+                        <p class="card-text">
+                            $10
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                </div>
+            </div>
+
+        <!-- STRAYKIDS -->
+        <div class="col-md-3">
+            <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Photocards/Straykids5.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            STRAYKIDS
+                        </h3>
+                        <p class="card-text">
+                            $10
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                </div>
+            </div>
+
+        <!-- SVT -->
+        <div class="col-md-3">
+            <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Photocards/SVT5.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            SEVENTEEN
+                        </h3>
+                        <p class="card-text">
+                            $10
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="view-more-btn d-flex flex-column align-items-center justify-content-center">
+                    <a href="photocards.html" target="_blank">
+                    <buttom class="btn btn-secondary mt-5">SEE ALL</buttom>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><hr>
+
+<!-- MAGAZINES GRID -->
+
+    <div class="containertext mt-5 justify-content-center" id="homemagazine">
+        <div class="row g-5">
+            <div class="col-md-12">
+                <div class="text mt-5 mb-5">
+                    <h1 class="text-center">MAGAZINES</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- MAGAZINES MODAL-->
+
+    <div class="container mt-5 align-items-center flex-wrap justify-content-evenly">
+        <div class="row g-5">
+
+        <!-- 1 -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Magazines/1.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Marie Claire 2024-05 Type.A NewJeans
+                        </h3>
+                        <p class="card-text">
+                            $9.50
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#1Modal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="1Modal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <img src="img/Magazines/1.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <h3>Marie Claire 2024-05 Type.A NewJeans</h3>
+                            <p>
+                                "Pre - Order
+                                Release Date : APR - 25th - 2024
+                                220*285
+                                *Pre Order Benefit : OLGO Starter Kit(Random 1 out of 3) + Art Busan"</p>
+                                <h2>$9.50</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 2 -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Magazines/2.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Marie Claire 2024-05 Type.C NewJeans
+                        </h3>
+                        <p class="card-text">
+                            $9.50
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#2Modal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="2Modal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <img src="img/Magazines/2.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <h3>Marie Claire 2024-05 Type.C NewJeans</h3>
+                            <p>
+                                "Pre - Order
+                                Release Date : APR - 25th - 2024
+                                220*285
+                                *Pre Order Benefit : OLGO Starter Kit(Random 1 out of 3) + Art Busan"</p>
+                                <h2>$9.50</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Magazines/3.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Marie Claire 2024-05 Type.B NewJeans
+                        <p class="card-text">
+                            $9.50
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#3Modal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="3Modal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <img src="img/Magazines/3.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <h3>Marie Claire 2024-05 Type.B NewJeans</h3>
+                            <p>
+                                "Pre - Order
+                                Release Date : APR - 25th - 2024
+                                220*285
+                                *Pre Order Benefit : OLGO Starter Kit(Random 1 out of 3) + Art Busan"</p>
+                                <h2>$9.50</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 4 -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Magazines/4.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Magazine ITTABOOK No.14 nSsign
+                        </h3>
+                        <p class="card-text">
+                            $9.50
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#4Modal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="4Modal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <img src="img/Magazines/4.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <h3>Magazine ITTABOOK No.14 nSsign</h3>
+                            <p>
+                                "Pre - Order
+                                Release Date : APR - 25th - 2024
+                                220*285
+                                *Pre Order Benefit : OLGO Starter Kit(Random 1 out of 3) + Art Busan"</p>
+                                <h2>$9.50</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Magazines/5.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            WWD Korea 2024-05 Type.A HYUN A
+                        </h3>
+                        <p class="card-text">
+                            $9.50
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#5Modal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="5Modal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <img src="img/Magazines/5.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <h3>WWD Korea 2024-05 Type.A HYUN A</h3>
+                            <p>
+                                "Pre - Order
+                                Release Date : APR - 25th - 2024
+                                220*285
+                                *Pre Order Benefit : OLGO Starter Kit(Random 1 out of 3) + Art Busan"</p>
+                                <h2>$9.50</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Magazines/6.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Vogue 2024-05 Type.B JENNIE
+                        </h3>
+                        <p class="card-text">
+                            $9.50
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#6Modal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="6Modal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <img src="img/Magazines/6.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <h3>Vogue 2024-05 Type.B JENNIE</h3>
+                            <p>
+                                "Pre - Order
+                                Release Date : APR - 25th - 2024
+                                220*285
+                                *Pre Order Benefit : OLGO Starter Kit(Random 1 out of 3) + Art Busan"</p>
+                                <h2>$9.50</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Magazines/7.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            Magazine Vogue 2024-05 Type.A JENNIE
+                        </h3>
+                        <p class="card-text">
+                            $9.50
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#7Modal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="7Modal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <img src="img/Magazines/7.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <h3>Magazine Vogue 2024-05 Type.A JENNIE</h3>
+                            <p>
+                                "Pre - Order
+                                Release Date : APR - 25th - 2024
+                                220*285
+                                *Pre Order Benefit : OLGO Starter Kit(Random 1 out of 3) + Art Busan"</p>
+                                <h2>$9.50</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="col-md-3">
+                <div class="card card-container d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/Magazines/8.jpg" class="card-img" alt="">
+                        <h3 class="card-title">
+                            WWD Korea 2024-05 Type.B HAN YESEUL
+                        </h3>
+                        <p class="card-text">
+                            $9.50
+                        </p>
+                    <button class="btn btn-warning text-dark">ADD TO CART</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#8Modal">
+                        VIEW DETAILS
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="8Modal">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <img src="img/Magazines/8.jpg" class="d-block w-100" alt="">
+                        <div class="modal-body">
+                            <h3>WWD Korea 2024-05 Type.B HAN YESEUL</h3>
+                            <p>
+                                "Pre - Order
+                                Release Date : APR - 25th - 2024
+                                220*285
+                                *Pre Order Benefit : OLGO Starter Kit(Random 1 out of 3) + Art Busan"</p>
+                                <h2>$9.50</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning text-dark" data-bs-dismiss="modal">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="view-more-btn d-flex flex-column align-items-center justify-content-center">
+                    <a href="magazines.html" target="_blank">
+                    <buttom class="btn btn-secondary mt-5">SEE ALL</buttom>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><hr>
+
+<!-- NEWS GRID -->
+
+    <div class="containertext mt-5 justify-content-center" id="homenews">
+        <div class="row g-5">
+            <div class="col-md-12">
+                <div class="text mt-5 mb-5">
+                    <h1 class="text-center">LATES NEWS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ARTICLE CONTAINERS -->
+
+    <div class="news-card-container align-items-center flex-wrap justify-content-evenly">
+        <div class="row">
+
+            <!-- 1 -->
+            <div class="col-md-6">
+                <div class="news-container d-flex ms-5">
+                    <div class="newscard-img">
+                        <img src="img/News/img1.jpg" class="card-img" alt="">
+                    </div>
+                    <div class="newscard-text text-dark ps-3 me-5">
+                        <a href="https://www.allkpop.com/article/2024/04/apink-reveal-teaser-image-for-13th-anniversary-fan-song" target="_blank">
+                            <h3>Apink reveal teaser image for 13th anniversary fan song</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+         <!-- 2 -->
+            <div class="col-md-6">
+                <div class="news-container d-flex ms-5">
+                    <div class="newscard-img">
+                        <img src="img/News/img2.jpg" class="card-img" alt="">
+                    </div>
+                    <div class="newscard-text ps-3 me-5">
+                        <a href="https://www.allkpop.com/article/2024/04/illit-top-k-pop-idol-group-brand-value-rankings-for-april-followed-by-seventeen-tws-more" target="_blank">
+                        <h3>ILLIT top K-Pop idol group brand value rankings for April, followed by Seventeen, TWS, & more</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <br><hr>
+
+    <!-- SEMI FOOTER -->
+    <footer class="bg-white text-warning p-2 mt-5 container-fluid justify-content-center align-items-center d-flex">
+            
+        <div class="footer-container">
+            <div class="row">
+
+            <!-- AUTHENTIC -->
+                <div class="col-md-3 mt-4">
+                    <div class="item text-dark justify-content-center">
+                        <!-- <a href="#" class="p-2 footer-link text-dark"><i class="fa-brands fa-facebook"></i></a> -->
+                        <h3> 100% AUTHENTIC</h3>
+                        <p>D'8 KPOP COLLECTIONS only sells official products.</p>
+                    </div>
+                </div>
+
+            <!-- SHIPPING -->
+                <div class="col-md-3 mt-4">
+                    <div class="item text-dark justify-content-center">
+                        <!-- <a href="#" class="p-2 footer-link text-dark"><i class="fa-brands fa-facebook"></i></a> -->
+                        <h3>SAFE & FAST SHIPPING</h3>
+                        <p>Fast shipping in safe packaging and optimal ways.</p>
+                    </div>
+                </div>
+
+            <!-- CUSTOMER SERVICE -->
+                <div class="col-md-3 mt-4">
+                    <div class="item text-dark justify-content-center">
+                        <!-- <a href="#" class="p-2 footer-link text-dark"><i class="fa-brands fa-facebook"></i></a> -->
+                        <h3>CUSTOMER SERVICE</h3>
+                        <p>Our Kpop master will respond quickly.</p>
+                    </div>
+                </div>
+
+            <!-- CONTACT US -->
+                <div class="col-md-3 mt-4">
+                    <div class="item text-dark justify-content-center">
+                        <!-- <a href="#" class="p-2 footer-link text-dark"><i class="fa-solid fa-envelope"></i> -->
+                        <h3>CONTACT US</h3>
+                        <p>We support group purchases, review product requests, etc. Learn more</p>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+
+
+<!-- FOOTER -->
+    <footer class="bg-dark text-warning p-2 mt-5 container-fluid justify-content-between align-items-center d-flex">
+        
+        <div class="main-footer-container" id="contactus">
+            <div class="row">
+                
+             <!-- LOGO -->
+                <div class="col-md-3 mt-4">
+                    <div class="footer-logo">
+                        <img src="img/LOGO.png">
+                    </div>
+                    <div class="copyright p-2 text-warning mt-5">
+                        Copyright D'8 KPOP COLLECTIONS 2024
+                    </div>
+                </div>
+            
+            <!-- ADDRESS -->
+
+                <div class="col-md-3 mt-4">
+                    <h3>COMPANY DETAILS</h3>
+                    <p>Business no: 247-86-02163 <br> CEO: Den Valdez <br> Address: S-202, 338, Gwanggyojungang-ro, Suji-gu, <br> Yongin-si, Gyeonggi-do, 16942 South Korea <br> email: hello@d8kpopcollections.com </p>
+                </div>
+
+            <!-- ABOUT US -->
+                <div class="col-md-3 mt-4">
+                    <h3>ABOUT US</h3>
+                    <div class="list">
+                        <ul>
+                            <li>Conditions of use</li>
+                            <li>Privacy Policy</li>
+                            <li>Shipping Policy</li>
+                            <li>Refund Policy</li>
+                            <li>Terms of Service</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <!-- SOCIALS -->
+
+                <div class="col-md-3 mt-4">
+                    <div class="connect-text">
+                        <h3>CONNECT WITH US</h3>
+                    </div>  
+                    <div class="text-warning">
+                        <a href="#" class="p-2 footer-link text-warning"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="p-2 footer-link text-warning"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href="#" class="p-2 footer-link text-warning"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="p-2 footer-link text-warning"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

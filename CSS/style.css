@@ -1,0 +1,153 @@
+html, body{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Franklin Gothic';
+    /* color: black; */
+}
+.carousel-item img{
+    display: block;
+}
+
+/* NAVIGATION */
+
+.nav-item{
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    background-color: rgba(182, 182, 174, 0.158);
+}
+
+
+/* CARD GRID */
+.card img{
+    object-fit: cover;
+    width: 250px;
+    height: 350px;
+    padding: 5px;
+}
+
+.card .btn{
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 30px;;
+}
+
+.card .btn:hover {
+    background-color: #fff;
+    color:black;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    background-color: rgba(182, 182, 174, 0.158);
+}
+
+.card:hover .intro{
+    height: 100px;
+    bottom:100px;
+    background: #000000b7;
+    color:white;
+}
+
+/* CATEGOREIS */
+
+.card-title{
+    font-size: 25px;
+    margin-top: 4px;
+    font-weight: normal;
+}
+
+.card-text{
+    font-size: 23px;
+    margin-top: 4px;
+    font-weight: bold;
+}
+.card .btn{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.modalcard .btn:hover {
+    background-color: #fff;
+    color:black;
+}
+
+.modalcard:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+    background-color:rgba(237, 240, 70, 0.212);
+    border-radius: 5px;
+}
+
+.modalcard:hover .intro{
+    height: 100px;
+    bottom:100px;
+    background: #000000b7;
+    color:white;
+}
+
+/* NEWS CARD */
+
+.news-card-container{
+    margin:auto;
+    width: 1500px;
+    padding: 10px;
+ }
+.newscard-img img{
+    width: 250px;
+    height: 150px;
+}
+
+.newscard-text h3{
+    font-weight: normal;
+}
+
+.news-container:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    border-radius: 5px;
+}
+
+.newscard-text a{
+    color:black;
+    text-decoration: none;
+}
+
+.newscard-text a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* SEMI FOOTER */
+
+.footer-container{
+    width: 1800px;
+    margin:auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-footer-container{
+    width: 1800px;
+    margin:auto;
+    justify-content: center;
+}
+
+.footer-container h3{
+    font-size: 30px;
+}
+
+.footer-container p{
+    font-size: 25px;
+    font-weight: normal;
+}
