@@ -9,6 +9,11 @@ html, body{
     display: block;
 }
 
+.carousel-caption .btn:hover{
+    background-color: #fff;
+    color:black;
+}
+
 /* NAVIGATION */
 
 .nav-item{
@@ -25,6 +30,9 @@ html, body{
 
 
 /* CARD GRID */
+.container{
+    margin:auto;
+}
 .card img{
     object-fit: cover;
     width: 250px;
@@ -32,11 +40,20 @@ html, body{
     padding: 5px;
 }
 
+.card-body h3{
+    text-align: center;
+}
+
+.card-body p{
+    text-align: center;
+}
+
 .card .btn{
     width: 130px;
     height: 40px;
     font-size: 18px;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
+    margin-left: 27px;
 }
 
 .card .btn:hover {
